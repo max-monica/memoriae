@@ -7,6 +7,7 @@
   - lite-server
   - concurrently
   - watchify
+- add favicon
 
 ## Server
 
