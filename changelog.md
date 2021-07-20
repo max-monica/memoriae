@@ -22,6 +22,8 @@
 
 ## Misc
 
+- Add Readme Sections and content where possible
+
 ## Stretch Goals
 
 - Deploy to Heroku
