@@ -23,15 +23,24 @@
   - uuid
   - pg
 - create basic express server
+- added init.js into dbconfig
+- create db example case
+- added the db seed part to package.json
+- Model created
+- app router function created
+
 
 ## Database
 
-- stub setup file
+- Stub setup file
+- Filled setup file
+
 
 ## Misc
 
 - Add Readme Sections and content where possible
 - Populate docker-compose file
+- Docker composer now execute 'npm run seedDev'
 
 ## Stretch Goals
 
