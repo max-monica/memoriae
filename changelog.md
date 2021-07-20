@@ -22,6 +22,9 @@
 - added init.js into dbconfig
 - create db example case
 - added the db seed part to package.json
+- Model created
+- app router function created
+
 
 ## Database
 
