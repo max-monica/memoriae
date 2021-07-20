@@ -8,6 +8,9 @@
   - concurrently
   - watchify
 - add favicon
+- render new post form at `/`
+- render post at `/#id`
+- impliment new post sumbission with form
 
 ## Server
 

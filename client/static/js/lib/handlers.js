@@ -1,12 +1,29 @@
 const main = document.querySelector('main');
+const { getPostData, createNewPost } = require('./fetch');
+const { createFormHTML, createPost } = require('./helpers');
 
-function updateMain(hash) {
+async function handlePostFormSubmit(e) {
+	try {
+		e.preventDefault();
+		const body = Object.fromEntries(new FormData(e.target));
+		const postData = await createNewPost(body);
+		if (!postData.id) {
+			throw new Error('New post has no id.');
+		}
+		window.location.hash = postData.id;
+	} catch (err) {
+		console.error(err);
+	}
+}
+
+async function updateMain(hash) {
 	main.textContent = '';
 	let child;
 	if (hash) {
-		// fetch post
+		const postData = await getPostData();
+		child = createPost(postData);
 	} else {
-		// create form
+		child = createFormHTML(handlePostFormSubmit);
 	}
 	main.append(child);
 }
