@@ -2,6 +2,12 @@
 
 ## Client
 
+- stub file structure
+- add initial dependencies
+  - lite-server
+  - concurrently
+  - watchify
+
 ## Server
 
 ## Database
