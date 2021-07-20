@@ -11,14 +11,14 @@ Anonymously post your thoughts and memoriaes
 ## Technologies
 
 <details>
-  <summary>**Environment**</summary>
+  <summary><b>Environment</b></summary>
 
 - [Docker](https://www.docker.com/)
 
 </details>
 
 <details>
-  <summary>**Client**</summary>
+  <summary><b>Client</b></summary>
   
   - HTML
   - CSS
@@ -31,7 +31,7 @@ Anonymously post your thoughts and memoriaes
 </details>
 
 <details>
-  <summary>**Server**</summary>
+  <summary><b>Server</b></summary>
 
 - [NodeJs](https://nodejs.org/en/)
 - [NPM](https://www.npmjs.com/)
@@ -45,7 +45,7 @@ Anonymously post your thoughts and memoriaes
 </details>
 
 <details>
-  <summary>**Database**</summary>
+  <summary><b>Database</b></summary>
 
 - [PostgreSQL](https://www.postgresql.org/)
 
@@ -56,7 +56,7 @@ Anonymously post your thoughts and memoriaes
 | Route Name | URL        | HTTP Verb | Description             |
 | ---------- | ---------- | --------- | ----------------------- |
 | Root       | /          | GET       | Test api is initialised |
-| Create     | /post      | POST      | Create a post           |
+| Create     | /posts     | POST      | Create a post           |
 | Show       | /posts/:id | GET       | Show info about a post  |
 
 ## Database Schema
