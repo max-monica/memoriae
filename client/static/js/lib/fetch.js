@@ -1,6 +1,6 @@
 const mockData = {
 	title: 'Made in Abyss',
-	date: Date.now(),
+	date: '2021-07-20 17:15:23.141222',
 	id: 'oiuahdfgasdgioh',
 	author: 'max',
 	body: 'Made in Abyss is a super awesome anime.',
