@@ -10,6 +10,12 @@
 
 ## Server
 
+- stub file structure
+- add initial dependencies
+  - express
+  - morgan
+  - cors
+
 ## Database
 
 - stub setup file
