@@ -70,7 +70,8 @@ async function updateMain(hash) {
 	main.textContent = '';
 	let child;
 	if (hash) {
-		const postData = await getPostData();
+		console.log(hash.slice(1));
+		const postData = await getPostData(hash.slice(1));
 		child = createPost(postData);
 	} else {
 		child = createFormHTML(handlePostFormSubmit);
