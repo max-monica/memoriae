@@ -11,14 +11,14 @@ Anonymously post your thoughts and memoriaes
 ## Technologies
 
 <details>
-  <summary><em>Environment</em></summary>
+  <summary><b>Environment</b></summary>
 
 - [Docker](https://www.docker.com/)
 
 </details>
 
 <details>
-  <summary><em>Client</em></summary>
+  <summary><b>Client</b></summary>
   
   - HTML
   - CSS
@@ -31,7 +31,7 @@ Anonymously post your thoughts and memoriaes
 </details>
 
 <details>
-  <summary><em>Server</em></summary>
+  <summary><b>Server</b></summary>
 
 - [NodeJs](https://nodejs.org/en/)
 - [NPM](https://www.npmjs.com/)
@@ -45,7 +45,7 @@ Anonymously post your thoughts and memoriaes
 </details>
 
 <details>
-  <summary><em>Database</em></summary>
+  <summary><b>Database</b></summary>
 
 - [PostgreSQL](https://www.postgresql.org/)
 
