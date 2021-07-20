@@ -56,7 +56,7 @@ Anonymously post your thoughts and memoriaes
 | Route Name | URL        | HTTP Verb | Description             |
 | ---------- | ---------- | --------- | ----------------------- |
 | Root       | /          | GET       | Test api is initialised |
-| Create     | /post      | POST      | Create a post           |
+| Create     | /posts     | POST      | Create a post           |
 | Show       | /posts/:id | GET       | Show info about a post  |
 
 ## Database Schema
