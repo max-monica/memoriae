@@ -12,6 +12,8 @@
 
 ## Database
 
+- stub setup file
+
 ## Misc
 
 ## Stretch Goals
