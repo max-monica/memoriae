@@ -36,7 +36,6 @@ Anonymously post your thoughts and memoriaes
 ## Database Schema
 
 ![Database Schema](./readme_assets/db_schema.jpg)
-Format: ![post database schema](url)
 
 ## Changelog
 
