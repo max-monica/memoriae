@@ -17,6 +17,7 @@
   - cors
   - nodemon
   - uuid
+  - pg
 - create basic express server
 
 ## Database
