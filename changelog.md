@@ -15,6 +15,9 @@
   - express
   - morgan
   - cors
+  - nodemon
+  - uuid
+- create basic express server
 
 ## Database
 
@@ -23,6 +26,7 @@
 ## Misc
 
 - Add Readme Sections and content where possible
+- Populate docker-compose file
 
 ## Stretch Goals
 
@@ -30,3 +34,4 @@
 - Testing
 - Edit posts
 - Delete posts
+- User friendly route names on client

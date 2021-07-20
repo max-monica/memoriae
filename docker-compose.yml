@@ -1,0 +1,29 @@
+version: '3'
+services:
+  server:
+    image: node:latest
+    volumes:
+      - type: bind
+        source: ./server
+        target: /code
+    working_dir: /code
+    ports:
+      - 5000:5000
+    environment:
+      - PGUSER=maximon
+      - PGHOST=db
+      - PGPASSWORD=secretpassword2
+      - PGDATABASE=memoriaes
+      - PGPORT=5432
+    command: bash -c "npm install && npm run dev"
+  db:
+    image: postgres:latest
+    volumes:
+      - 'postgresdata:/var/lib/postgresql/data'
+      - './db:/docker-entrypoint-initdb.d/:ro'
+    environment:
+      - POSTGRES_PASSWORD=secretpassword2
+      - POSTGRES_USER=maximon
+      - POSTGRES_DB=memoriaes
+volumes:
+  postgresdata:
