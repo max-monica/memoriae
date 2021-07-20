@@ -39,6 +39,7 @@ Anonymously post your thoughts and memoriaes
   - [cors](https://www.npmjs.com/package/cors)
   - [morgan](https://www.npmjs.com/package/morgan)
   - [uuid](https://www.npmjs.com/package/uuid)
+  - [nodemon](https://www.npmjs.com/package/nodemon)
 
 </details>
 
