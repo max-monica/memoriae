@@ -11,9 +11,11 @@ async function getPostData(id) {
 		const url = `http://localhost:5000/posts/${id}`;
 		const response = await fetch(url);
 		const postData = await response.json();
-		return mockData;
+		return postData;
 	} catch (err) {
 		console.error(err);
+		// for testing
+		return mockData;
 	}
 }
 
@@ -28,13 +30,12 @@ async function createNewPost(body) {
 		};
 		const url = 'http://localhost:5000/posts/';
 		const response = await fetch(url, options);
-		if (response.success) {
-			return true;
-		} else {
-			return false;
-		}
+		const newPost = response.json();
+		return newPost;
 	} catch (err) {
 		console.error(err);
+		// for testing
+		return mockData;
 	}
 }
 
