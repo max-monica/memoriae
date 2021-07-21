@@ -16,7 +16,7 @@ module.exports = class Post {
 				let id = uuidv4();
 				let post = await db.query(
 					`INSERT INTO posts (id, title, author, body) VALUES ($1,$2,$3,$4) RETURNING *`,
-					[id, data.title, data.author, data.body]
+					[id, data.title, data.author || 'Anonymous', data.body]
 				);
 				res(new Post(post.rows[0]));
 			} catch (e) {

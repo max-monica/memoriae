@@ -32,6 +32,7 @@
 - app router function created
 - fix post constructor and create sql query
 - add id validtation to `GET /posts/:id`
+- add default author of "Anonymous" to post model create method
 
 ## Database
 
