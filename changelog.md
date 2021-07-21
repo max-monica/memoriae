@@ -12,6 +12,7 @@
 - render post at `/#id`
 - impliment new post sumbission with form
 - fix field casing in createFormHTML helpers function
+- add frontend styling
 
 ## Server
 
@@ -31,6 +32,7 @@
 - app router function created
 - fix post constructor and create sql query
 - add id validtation to `GET /posts/:id`
+- add default author of "Anonymous" to post model create method
 
 ## Database
 
