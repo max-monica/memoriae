@@ -38,7 +38,7 @@ module.exports = { getPostData, createNewPost };
 },{}],3:[function(require,module,exports){
 const main = document.querySelector('main');
 const { getPostData, createNewPost } = require('./fetch');
-const { createFormHTML, createPost } = require('./helpers');
+const { createFormHTML, createPost, renderPostNotFound } = require('./helpers');
 
 async function handlePostFormSubmit(e) {
 	try {
@@ -59,6 +59,11 @@ async function updateMain(hash) {
 	let child;
 	if (hash) {
 		const postData = await getPostData(hash.slice(1));
+		console.log(postData);
+		if (!postData.id) {
+			renderPostNotFound();
+			return;
+		}
 		child = createPost(postData);
 	} else {
 		child = createFormHTML(handlePostFormSubmit);
@@ -140,6 +145,21 @@ function createPost({ title, author, body, date }) {
 	return post;
 }
 
-module.exports = { createFormHTML, createPost };
+function renderPostNotFound() {
+	const main = document.querySelector('main');
+
+	const header = document.createElement('h2');
+	header.innerText = '404';
+
+	const message = document.createElement('p');
+	message.innerText = 'Memoriae does not exist.';
+
+	const article = document.createElement('article');
+
+	article.append(header);
+	article.append(message);
+	main.append(article);
+}
+module.exports = { createFormHTML, createPost, renderPostNotFound };
 
 },{}]},{},[1]);

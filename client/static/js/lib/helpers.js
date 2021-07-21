@@ -59,4 +59,19 @@ function createPost({ title, author, body, date }) {
 	return post;
 }
 
-module.exports = { createFormHTML, createPost };
+function renderPostNotFound() {
+	const main = document.querySelector('main');
+
+	const header = document.createElement('h2');
+	header.innerText = '404';
+
+	const message = document.createElement('p');
+	message.innerText = 'Memoriae does not exist';
+
+	const article = document.createElement('article');
+
+	article.append(header);
+	article.append(message);
+	main.append(article);
+}
+module.exports = { createFormHTML, createPost, renderPostNotFound };

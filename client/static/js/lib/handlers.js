@@ -1,6 +1,6 @@
 const main = document.querySelector('main');
 const { getPostData, createNewPost } = require('./fetch');
-const { createFormHTML, createPost } = require('./helpers');
+const { createFormHTML, createPost, renderPostNotFound } = require('./helpers');
 
 async function handlePostFormSubmit(e) {
 	try {
@@ -21,6 +21,10 @@ async function updateMain(hash) {
 	let child;
 	if (hash) {
 		const postData = await getPostData(hash.slice(1));
+		if (!postData.id) {
+			renderPostNotFound();
+			return;
+		}
 		child = createPost(postData);
 	} else {
 		child = createFormHTML(handlePostFormSubmit);
