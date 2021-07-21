@@ -14,6 +14,7 @@
 - fix field casing in createFormHTML helpers function
 - add frontend styling
 - add 404 page for unfound posts
+- make frontend responsive
 
 ## Server
 
