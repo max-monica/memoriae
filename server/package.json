@@ -6,7 +6,7 @@
 	"scripts": {
 		"dev": "nodemon -L index.js",
 		"seedDev": "node dbConfig/dbconfig.js",
-		"start": "NODE_ENV=production nodemon index.js"
+		"start": "NODE_ENV=production node index.js"
 	},
 	"keywords": [],
 	"author": "",
