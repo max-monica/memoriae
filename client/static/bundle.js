@@ -59,7 +59,6 @@ async function updateMain(hash) {
 	let child;
 	if (hash) {
 		const postData = await getPostData(hash.slice(1));
-		console.log(postData);
 		if (!postData.id) {
 			renderPostNotFound();
 			return;
@@ -152,7 +151,7 @@ function renderPostNotFound() {
 	header.innerText = '404';
 
 	const message = document.createElement('p');
-	message.innerText = 'Memoriae does not exist.';
+	message.innerText = 'Memoriae does not exist';
 
 	const article = document.createElement('article');
 
