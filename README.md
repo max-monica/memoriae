@@ -6,7 +6,19 @@ Anonymously post your thoughts and memoriaes
 
 ### Installation
 
+- Clone or download the repo
+
 ### Usage
+
+- Go to the project folder
+- Open the bash terminal
+- Run: `bash _scripts/startDev.sh`
+- You will find:
+  - Client in port 3000
+  - Server in port 5000
+- To close the app:
+  - Open a new bash terminal in the project folder
+  - Run: `bash _scripts/teardown.sh`
 
 ## Technologies
 
