@@ -27,11 +27,12 @@ body {
 	min-height: 100vh;
 	background-color: var(--background-color);
 	color: var(--text-color);
+	padding-top: 50px;
 }
 
 h1 {
 	width: fit-content;
-	margin: 50px 100px 20px;
+	margin: 0 100px 20px;
 	font-size: 50px;
 	transition: 0.3s;
 }
