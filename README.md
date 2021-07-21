@@ -84,6 +84,9 @@ Find the full changelog [here](./changelog.md)
 
 ## Bugs
 
+- [ ]  When you search some address in the url and you add extra slash parameters to the home address the 404 page doesn't show.
+- [ ]  The default 'Anonymous' of the user is not working with the actual insert query when author is empty or null (for now it's been asign before the query).
+
 ## Licence
 
 [MIT Licence](https://opensource.org/licenses/mit-license.php)
