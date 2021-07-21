@@ -94,7 +94,7 @@ module.exports = { initPageBindings };
 },{"./fetch":2,"./helpers":4}],4:[function(require,module,exports){
 function createFormHTML(eventHandler) {
 	const form = document.createElement('form');
-	const fields = ['Title', 'Author', 'Body'];
+	const fields = ['title', 'author', 'body'];
 
 	fields.forEach((field) => {
 		const inputLabel = document.createElement('label');

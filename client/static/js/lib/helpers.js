@@ -1,6 +1,6 @@
 function createFormHTML(eventHandler) {
 	const form = document.createElement('form');
-	const fields = ['Title', 'Author', 'Body'];
+	const fields = ['title', 'author', 'body'];
 
 	fields.forEach((field) => {
 		const inputLabel = document.createElement('label');

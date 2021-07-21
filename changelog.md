@@ -11,6 +11,7 @@
 - render new post form at `/`
 - render post at `/#id`
 - impliment new post sumbission with form
+- fix field casing in createFormHTML helpers function
 
 ## Server
 
