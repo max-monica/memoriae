@@ -1,11 +1,3 @@
-const mockData = {
-	title: 'Made in Abyss',
-	date: '2021-07-20 17:15:23.141222',
-	id: 'oiuahdfgasdgioh',
-	author: 'max',
-	body: 'Made in Abyss is a super awesome anime.',
-};
-
 async function getPostData(id) {
 	try {
 		const url = `http://localhost:5000/posts/${id}`;
@@ -14,8 +6,6 @@ async function getPostData(id) {
 		return postData;
 	} catch (err) {
 		console.error(err);
-		// for testing
-		return mockData;
 	}
 }
 
@@ -34,8 +24,6 @@ async function createNewPost(body) {
 		return newPost;
 	} catch (err) {
 		console.error(err);
-		// for testing
-		return mockData;
 	}
 }
 

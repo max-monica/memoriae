@@ -20,7 +20,6 @@ async function updateMain(hash) {
 	main.textContent = '';
 	let child;
 	if (hash) {
-		console.log(hash.slice(1));
 		const postData = await getPostData(hash.slice(1));
 		child = createPost(postData);
 	} else {
