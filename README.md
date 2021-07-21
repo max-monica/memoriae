@@ -19,7 +19,7 @@ Anonymously post your thoughts and memoriaes
 - To close the app:
   - Open a new bash terminal in the project folder
   - Run: `bash _scripts/stop.sh`
-- To destroy any remain of the app:
+- To perfom a complete teardown of the app:
   - Open a new bash terminal in the project folder
   - Run: `bash _scripts/teardown.sh`
 
