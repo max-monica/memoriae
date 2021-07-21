@@ -30,6 +30,7 @@
 - Model created
 - app router function created
 - fix post constructor and create sql query
+- add id validtation to `GET /posts/:id`
 
 ## Database
 
