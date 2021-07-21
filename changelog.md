@@ -28,13 +28,12 @@
 - added the db seed part to package.json
 - Model created
 - app router function created
-
+- fix post constructor and create sql query
 
 ## Database
 
 - Stub setup file
 - Filled setup file
-
 
 ## Misc
 
