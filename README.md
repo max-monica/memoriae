@@ -14,9 +14,12 @@ Anonymously post your thoughts and memoriaes
 - Open the bash terminal
 - Run: `bash _scripts/startDev.sh`
 - You will find:
-  - Client in port 3000
-  - Server in port 5000
+  - Client in [localhost:3000](http://localhost:3000/) 
+  - Server in [localhost:5000](http://localhost:5000/)
 - To close the app:
+  - Open a new bash terminal in the project folder
+  - Run: `bash _scripts/stop.sh`
+- To destroy any remain of the app:
   - Open a new bash terminal in the project folder
   - Run: `bash _scripts/teardown.sh`
 
