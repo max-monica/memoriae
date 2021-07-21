@@ -13,6 +13,7 @@
 - impliment new post sumbission with form
 - fix field casing in createFormHTML helpers function
 - add frontend styling
+- add 404 page for unfound posts
 
 ## Server
 
