@@ -2,11 +2,11 @@
 	"name": "server",
 	"version": "1.0.0",
 	"description": "",
-	"main": "index.js",
+	"main": "app.js",
 	"scripts": {
 		"dev": "nodemon -L index.js",
 		"seedDev": "node dbConfig/dbconfig.js",
-		"start": "index.js"
+		"start": "NODE_ENV=production nodemon index.js"
 	},
 	"keywords": [],
 	"author": "",
