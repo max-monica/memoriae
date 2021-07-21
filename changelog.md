@@ -11,6 +11,7 @@
 - render new post form at `/`
 - render post at `/#id`
 - impliment new post sumbission with form
+- fix field casing in createFormHTML helpers function
 
 ## Server
 
@@ -28,13 +29,13 @@
 - added the db seed part to package.json
 - Model created
 - app router function created
-
+- fix post constructor and create sql query
+- add id validtation to `GET /posts/:id`
 
 ## Database
 
 - Stub setup file
 - Filled setup file
-
 
 ## Misc
 
