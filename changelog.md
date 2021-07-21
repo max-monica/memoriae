@@ -42,6 +42,8 @@
 - Add Readme Sections and content where possible
 - Populate docker-compose file
 - Docker composer now execute 'npm run seedDev'
+- Docker compose now includes the client
+- Added the Start/Stop scripts and include them in the readme
 
 ## Stretch Goals
 
