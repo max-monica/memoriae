@@ -12,6 +12,7 @@
 - render post at `/#id`
 - impliment new post sumbission with form
 - fix field casing in createFormHTML helpers function
+- add frontend styling
 
 ## Server
 

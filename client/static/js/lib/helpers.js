@@ -1,5 +1,6 @@
 function createFormHTML(eventHandler) {
 	const form = document.createElement('form');
+	form.autocomplete = 'off';
 	const fields = ['title', 'author', 'body'];
 
 	fields.forEach((field) => {
