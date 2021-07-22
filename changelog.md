@@ -35,6 +35,8 @@
 - fix post constructor and create sql query
 - add id validtation to `GET /posts/:id`
 - add default author of "Anonymous" to post model create method
+- adapted the access to the db for Heroku
+- added NODE_ENV configuration
 
 ## Database
 
