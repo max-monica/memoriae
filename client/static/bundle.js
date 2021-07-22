@@ -6,7 +6,7 @@ initPageBindings();
 },{"./lib/handlers":3}],2:[function(require,module,exports){
 async function getPostData(id) {
 	try {
-		const url = `http://localhost:5000/posts/${id}`;
+		const url = `https://memoriaes.herokuapp.com/posts/${id}`;
 		const response = await fetch(url);
 		const postData = await response.json();
 		return postData;
@@ -24,7 +24,7 @@ async function createNewPost(body) {
 			headers,
 			body: JSON.stringify(body),
 		};
-		const url = 'http://localhost:5000/posts/';
+		const url = 'https://memoriaes.herokuapp.com/posts/';
 		const response = await fetch(url, options);
 		const newPost = response.json();
 		return newPost;

@@ -1,4 +1,4 @@
-const db = require('../dbConfig/init');
+const db = require('../dbconfig/init');
 const { v4: uuidv4 } = require('uuid');
 
 module.exports = class Post {
