@@ -1,6 +1,8 @@
+const serverUrl = require('./url');
+
 async function getPostData(id) {
 	try {
-		const url = `https://memoriaes.herokuapp.com/posts/${id}`;
+		const url = `${serverUrl}posts/${id}`;
 		const response = await fetch(url);
 		const postData = await response.json();
 		return postData;
@@ -18,7 +20,7 @@ async function createNewPost(body) {
 			headers,
 			body: JSON.stringify(body),
 		};
-		const url = 'https://memoriaes.herokuapp.com/posts/';
+		const url = `${serverUrl}posts/`;
 		const response = await fetch(url, options);
 		const newPost = response.json();
 		return newPost;
