@@ -4,7 +4,7 @@
 	"description": "",
 	"main": "app.js",
 	"scripts": {
-		"dev": "nodemon -L index.js",
+		"dev": "cross-env NODE_ENV=development nodemon -L index.js",
 		"seedDev": "cross-env NODE_ENV=development node dbconfig/dbconfig.js",
 		"start": "cross-env NODE_ENV=production node index.js"
 	},

@@ -4,9 +4,11 @@ const { initPageBindings } = require('./lib/handlers');
 initPageBindings();
 
 },{"./lib/handlers":3}],2:[function(require,module,exports){
+const serverUrl = require('./url');
+
 async function getPostData(id) {
 	try {
-		const url = `https://memoriaes.herokuapp.com/posts/${id}`;
+		const url = `${serverUrl}posts/${id}`;
 		const response = await fetch(url);
 		const postData = await response.json();
 		return postData;
@@ -24,7 +26,7 @@ async function createNewPost(body) {
 			headers,
 			body: JSON.stringify(body),
 		};
-		const url = 'https://memoriaes.herokuapp.com/posts/';
+		const url = `${serverUrl}posts/`;
 		const response = await fetch(url, options);
 		const newPost = response.json();
 		return newPost;
@@ -35,7 +37,7 @@ async function createNewPost(body) {
 
 module.exports = { getPostData, createNewPost };
 
-},{}],3:[function(require,module,exports){
+},{"./url":5}],3:[function(require,module,exports){
 const main = document.querySelector('main');
 const { getPostData, createNewPost } = require('./fetch');
 const { createFormHTML, createPost, renderPostNotFound } = require('./helpers');
@@ -160,5 +162,13 @@ function renderPostNotFound() {
 	main.append(article);
 }
 module.exports = { createFormHTML, createPost, renderPostNotFound };
+
+},{}],5:[function(require,module,exports){
+const url =
+	window.location.hostname === 'localhost'
+		? 'http://localhost:5000/'
+		: 'https://memoriaes.herokuapp.com/';
+
+module.exports = url;
 
 },{}]},{},[1]);
